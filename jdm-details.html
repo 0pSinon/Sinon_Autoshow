@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>JDM | SINON AUTOSHOW®</title>
+    
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/car-page/styles.css">
+
+    <!--==================== BOOTSTRAP ICON ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+</head>
+
+<body>
+
+<!--==================== NAVBAR ====================-->
+
+<header class="header">
+    <a href="#" class="logo">
+    <img src="img/favicon.png" alt="Logo">
+    SINON AUTOSHOW®
+</a>
+
+    <nav class="navbar">
+        <a href="home.html" style="--i:1" class="active">Home</a>
+        <a href="home.html#featured1" style="--i:2">Car</a>
+        <a href="home.html#featured2" style="--i:3">Motorcycle</a>
+        <a href="booking.html" style="--i:4">Booking</a>
+        <a href="community.html" style="--i:5">Community</a>
+        <a href="contact.html" style="--i:6">Contact</a>
+    </nav>
+
+    <div class="social-media">
+        <a href="#" style="--i:1"><i class=''></i></a>
+        <a href="#" style="--i:2"><i class='fa-solid fa-car fa-fade'></i></a>
+        <a href="login.html" style="--i:3"><i class='fa-solid fa-user fa-fade'></i></a> 
+    </div>
+</header>
+
+
+    <body>
+          
+              
+            <!--==================== FEATURED ====================-->
+            <section class="featured section" id="featured">
+              <h2 class="section__title">
+                  Featured JDM Cars
+              </h2>
+
+              <div class="featured__container container">
+                  <ul class="featured__filters">
+                      <li>
+                          <button class="featured__item active-featured" data-filter="all">
+                              <span>All</span>
+                          </button>
+                      </li>
+                      <li>
+                          <button class="featured__item" data-filter=".nissan">
+                              <img src="img/car/JDM/GTR_logo.png" alt="">
+                          </button>
+                      </li>
+                      <li>
+                          <button class="featured__item" data-filter=".toyota">
+                              <img src="img/car/JDM/Supra_logo.jpg" alt="">
+                          </button>
+                      </li>
+                      <li>
+                          <button class="featured__item" data-filter=".mazda">
+                              <img src="img/car/JDM/Mazda_logo.png" alt="">
+                          </button>
+                      </li>
+                  </ul>
+
+                  <div class="featured__content grid">
+                      <article class="featured__card mix nissan">
+                          <div class="shape shape__smaller"></div>
+
+                          <h1 class="featured__title">Nissan</h1>
+
+                          <h3 class="featured__subtitle">GT-R R34 Series 2 S-Tune</h3>
+
+                          <img src="img/car/JDM/GTR_R34.png" alt="" class="featured__img">
+
+                          <h3 class="featured__price">RM 1,200,000</h3>
+
+                          <div class="popular__data">
+                              <div class="popular__data-group">
+                                  <i class="ri-dashboard-3-line"></i> 5.2 Sec
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-funds-box-line"></i> 251 km/h
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-charging-pile-2-line"></i> Petrol
+                              </div>
+                          </div>
+                          
+
+                          <button class="button featured__button" onclick="showDetails('additionalDetails1')">
+                            <i class="ri-shopping-bag-2-line"></i>Details
+                        </button>
+
+                          <!-- Additional details initially hidden -->
+                          <div id="additionalDetails1" style="display: none;">
+                              <p>2.6L In-line 6-cyl, twin-turbo</p>
+                              <p>6-speed Manual</p>
+                              <p>Blue, Silver, White</p>
+                          </div>
+                      </article>
+                              
+
+                      <article class="featured__card mix nissan">
+                          <div class="shape shape__smaller"></div>
+
+                          <h1 class="featured__title">Nissan</h1>
+
+                          <h3 class="featured__subtitle">GTR 35 Nismo Edition</h3>
+
+                          <img src="img/car/JDM/GTR_R35.png" alt="" class="featured__img">
+
+                          <h3 class="featured__price">RM 1,095,000</h3>
+
+                          <div class="popular__data">
+                              <div class="popular__data-group">
+                                  <i class="ri-dashboard-3-line"></i>  2.7 Sec
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-funds-box-line"></i> 328km/h
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-charging-pile-2-line"></i> Petrol
+                              </div>
+                          </div>
+
+                          <button class="button featured__button" onclick="showDetails('additionalDetails2')">
+                              <i class="ri-shopping-bag-2-line"></i>Details
+                          </button>
+              
+                          <!-- Additional details initially hidden -->
+                          <div id="additionalDetails2" style="display: none;">
+                              <p>NISMO®-tuned 3.8-liter twin-turbocharged V6</p>
+                              <p>6-speed DCT</p>
+                              <p>Black,White</p>
+                          </div>
+
+                      </article>
+
+                      <article class="featured__card mix toyota">
+                          <div class="shape shape__smaller"></div>
+
+                          <h1 class="featured__title">Toyota</h1>
+
+                          <h3 class="featured__subtitle">Supra MK4 Paul Walker Edition</h3>
+
+                          <img src="img/car/JDM/Supra_Mk4.png" alt="" class="featured__img">
+
+                          <h3 class="featured__price">RM 725,000</h3>
+
+                          <div class="popular__data">
+                              <div class="popular__data-group">
+                                  <i class="ri-dashboard-3-line"></i> 4.9 Sec
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-funds-box-line"></i> 277 Km/h
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-charging-pile-2-line"></i> Petrol
+                              </div>
+                          </div>
+
+                          <button class="button featured__button" onclick="showDetails('additionalDetails3')">
+                              <i class="ri-shopping-bag-2-line"></i>Details
+                          </button>
+              
+                          <!-- Additional details initially hidden -->
+                          <div id="additionalDetails3" style="display: none;">
+                              <p>Twin-turbo 3.0L Straight Six</p>
+                              <p>6-Speed Manual, or 4-Speed Automatic</p>
+                              <p>Black,Orange</p>
+                          </div>
+                      </article>
+
+                      <article class="featured__card mix toyota">
+                          <div class="shape shape__smaller"></div>
+
+                          <h1 class="featured__title">Toyota</h1>
+
+                          <h3 class="featured__subtitle">Supra MK5 GR-RZ</h3>
+
+                          <img src="img/car/JDM/Supra_Mk5.png"" class="featured__img">
+
+                          <h3 class="featured__price">RM 655,000</h3>
+
+                          <div class="popular__data">
+                              <div class="popular__data-group">
+                                  <i class="ri-dashboard-3-line"></i> 4.1 Sec
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-funds-box-line"></i> 249 Km/h
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-charging-pile-2-line"></i> Petrol
+                              </div>
+                          </div>
+
+                          <button class="button featured__button" onclick="showDetails('additionalDetails4')">
+                              <i class="ri-shopping-bag-2-line"></i>Details
+                          </button>
+              
+                          <!-- Additional details initially hidden -->
+                          <div id="additionalDetails4" style="display: none;">
+                              <p>3.0L 6 Cylinder Inline,Twin Scroll Turbo</p>
+                              <p>8-speed sports Automatic</p>
+                              <p>Orange,Black & White</p>
+                          </div>
+                      </article>
+
+                      <article class="featured__card mix mazda">
+                          <div class="shape shape__smaller"></div>
+
+                          <h1 class="featured__title">Mazda</h1>
+
+                          <h3 class="featured__subtitle">Rx 7 FD FastFurious Edition</h3>
+
+                          <img src="img/car/JDM/Rx7.png" alt="" class="featured__img">
+
+                          <h3 class="featured__price">RM 468,000</h3>
+
+                          <div class="popular__data">
+                              <div class="popular__data-group">
+                                  <i class="ri-dashboard-3-line"></i> 5.2 Sec
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-funds-box-line"></i> 250 Km/h
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-charging-pile-2-line"></i> Petrol
+                              </div>
+                          </div>
+
+                          <button class="button featured__button" onclick="showDetails('additionalDetails5')">
+                              <i class="ri-shopping-bag-2-line"></i>Details
+                          </button>
+              
+                          <!-- Additional details initially hidden -->
+                          <div id="additionalDetails5" style="display: none;">
+                              <p>1.3L Turbocharged Rotary Engine</p>
+                              <p> 5 speed Manual Gearbox</p>
+                              <p>FastnFurious Theme</p>
+                          </div>
+                      </article>
+
+                      <article class="featured__card mix mazda">
+                          <div class="shape shape__smaller"></div>
+
+                          <h1 class="featured__title">Mazda</h1>
+
+                          <h3 class="featured__subtitle">Rx 8 Type S</h3>
+
+                          <img src="img/car/JDM/Rx8.png" alt="" class="featured__img">
+
+                          <h3 class="featured__price">RM 285,000</h3>
+
+                          <div class="popular__data">
+                              <div class="popular__data-group">
+                                  <i class="ri-dashboard-3-line"></i> 6.4 Sec
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-funds-box-line"></i> 235 Km/h
+                              </div>
+                              <div class="popular__data-group">
+                                  <i class="ri-charging-pile-2-line"></i> Petrol
+                              </div>
+                          </div>
+
+                          <button class="button featured__button" onclick="showDetails('additionalDetails6')">
+                              <i class="ri-shopping-bag-2-line"></i>Details
+                          </button>
+              
+                          <!-- Additional details initially hidden -->
+                          <div id="additionalDetails6" style="display: none;">
+                              <p>1.3L RENESIS two-rotor rotary engine</p>
+                              <p> 6 Speed Manual</p>
+                              <p>Yellow Track-style</p>
+                          </div>
+                      </article>
+                  </div>
+              </div>
+          </section>
+ 
+
+
+
+                        <!--==================== LOGOS ====================-->
+                        <section class="logos section">
+                            <div class="logos__container container grid">
+                                <div class="logos__content">
+                                    <img src="img/logo1.png" alt="" class="logos__img">
+                                </div>
+
+                                <div class="logos__content">
+                                    <img src="img/logo2.png" alt="" class="logos__img">
+                                </div>
+
+                                <div class="logos__content">
+                                    <img src="img/logo3.png" alt="" class="logos__img">
+                                </div>
+
+                                <div class="logos__content">
+                                    <img src="img/logo4.png" alt="" class="logos__img">
+                                </div>
+
+                                <div class="logos__content">
+                                    <img src="img/logo5.png" alt="" class="logos__img">
+                                </div>
+
+                                <div class="logos__content">
+                                    <img src="img/logo6.png" alt="" class="logos__img">
+                                </div>
+                            </div>
+                        </section>
+
+                
+
+                <!--==================== FOOTER ====================-->
+                <footer class="footer section" id="footer">
+                    <div class="shape shape__big"></div>
+                    <div class="shape shape__small"></div>
+
+                    <div class="footer__container container grid">
+                        <div class="footer__content">
+                            <a href="#" class="footer__logo">
+                                <img src="img/favicon.png" alt="Sinon Autoshow Logo">
+                                SINON AUTOSHOW®
+                            </a>
+                            <p class="footer__description">
+                                We offer the best electric cars of <br>
+                                the most recognized brands in <br>
+                                the world.
+                            </p>
+                        </div>
+
+                        <div class="footer__content">
+                            <h3 class="footer__title">
+                                Information
+                            </h3>
+
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="footer__link">Request a quote</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Find a dealer</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="footer__link">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Services</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__content">
+                            <h3 class="footer__title">
+                                Follow us
+                            </h3>
+
+                            <ul class="footer__social">
+                                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                    <i class="fa-brands fa-facebook-f fa-beat"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                    <i class="fa-brands fa-instagram fa-beat-fade"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                                    <i class="fa-brands fa-twitter fa-beat-fade"></i>
+                                </a>
+                                <a href="https://tiktok.com/" target="_blank" class="footer__social-link">
+                                    <i class="fa-brands fa-tiktok fa-beat-fade"></i>
+                                </a>
+                            </ul>
+                        </div>
+
+
+                        <div class="footer__content">
+                            <h3 class="footer__title">
+                                Subscribe to our Newsletter
+                            </h3>
+                            <p class="footer__description">
+                                Get the latest news and updates.
+                            </p>
+                            <form class="footer__form">
+                                <input type="email" placeholder="Enter your email address">
+                                <button type="submit" class="footer__subscribe-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <span class="footer__copy">
+                        Copyright &#169; 2023 - SINON AUTOSHOW® SDN BHD
+                    </span>
+                </footer>
+
+
+                 <!--========== SCROLL UP ==========-->
+                <a href="#" class="scrollup" id="scroll-up">
+                    <i class="ri-arrow-up-line"></i>
+                </a>
+
+                <!--=============== SCROLL REVEAL ===============-->
+                <script src="assets/js/car-page/scrollreveal.min.js"></script>
+
+                <!--=============== SWIPER JS ===============-->
+                <script src="assets/js/car-page/swiper-bundle.min.js"></script>
+
+                <!--=============== MIXITUP JS ===============-->
+                <script src="assets/js/car-page/mixitup.min.js"></script>
+
+                <!--=============== MAIN JS ===============-->
+                <script src="assets/js/car-page/main.js"></script>
+                
+
+</body>
+
+</html>
